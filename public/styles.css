@@ -1,0 +1,16 @@
+body{
+  background: blanchedalmond;
+  float: left; 
+}
+
+h3{
+  margin-top: 40px;
+}
+
+.heart-red{
+  color: red; 
+}
+
+.heart-black{
+  color: black; 
+}
