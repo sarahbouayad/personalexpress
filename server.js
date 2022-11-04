@@ -46,13 +46,15 @@ app.get("/", (req, res) => {
 });
 
 app.post("/songCollection", (req, res) => {
+  console.log(req.body.playlistOptions)
   db.collection("songCollection").insertOne(
     {
       artistName: req.body.artistName,
       msg: req.body.msg,
       upVote: 0,
       musicVideo:  req.body.musicVideo,
-      heart: false
+      heart: false,
+      playlistOptions: req.body.playlistOptions
     },
     (err, result) => {
       if (err) return console.log(err);

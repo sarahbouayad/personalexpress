@@ -1,8 +1,13 @@
+/* .box{
+  /* display:inline-flexbox; */
+
+
 body{
   background: blanchedalmond;
-  float: left; 
 }
-
+.message{
+  text-align: center;
+}
 h3{
   margin-top: 40px;
 }
@@ -13,4 +18,24 @@ h3{
 
 .heart-black{
   color: black; 
+}
+
+ul {
+  list-style: none;
+}
+
+.morning{
+  border: 7px solid red; 
+}
+
+.vibes{
+  border: 5px solid purple; 
+}
+
+.productivity{
+  border: 5px solid green; 
+}
+
+.workout{
+  border: 5px solid yellow; 
 }
