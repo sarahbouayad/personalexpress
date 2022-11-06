@@ -37,7 +37,6 @@ app.get("/", (req, res) => {
     .find()
     .toArray((err, allDocuments) => {
       // sort logic
-      // stackoverflow help
       allDocuments.sort((a, b) => parseFloat(b.upVote) - parseFloat(a.upVote));
   
       if (err) return console.log(err);
@@ -88,6 +87,7 @@ app.put("/messages", (req, res) => {
 });
 
 app.put("/favorites", (req, res) => {
+  
   // heart a song logic
   // click heart, fetch 
 
